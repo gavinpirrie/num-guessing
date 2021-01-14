@@ -30,4 +30,4 @@ while guess != magic_num:
     guess = int(input("\nEnter your guess here:  "))
 
     if guess == magic_num:
-        print("You got it right!")
+        print("You got it right! Good job!")
