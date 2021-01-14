@@ -13,13 +13,12 @@ magic_num = random.randint(1,max)
 #Get user's input
 guess = int(input(f"\nEnter your guess here (under {max})! :"))
 
-if guess == magic_num:
-    print("You got it right!")
-
-while guess != magic_num:
+#Guessing Loop
+while True:
 
     if guess == magic_num:
         print("You got it right!")
+        break
     elif guess < magic_num:
         print("You guessed too low!")
     elif guess > magic_num:
@@ -28,6 +27,3 @@ while guess != magic_num:
         print("You found an error")
 
     guess = int(input("\nEnter your guess here:  "))
-
-    if guess == magic_num:
-        print("You got it right! Good job!")
